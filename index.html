@@ -191,8 +191,27 @@
       <div class="column is-full-width">
         <h2 class="title is-3">Experiments</h2>
         <h3 class="title is-4">Preliminary Evaluation</h3>
-        <div class="content has-text-justified has-text-centered">
-          <img src="static/images/rouge_bleu.png" />
+        <img src="static/images/rouge_bleu.png" />
+        <div class="content has-text-justified">
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <p>
+                    Evaluation on a test set of 250 BTs from the custom instruction-following dataset demonstrates that fine-tuning substantially improves performance compared to the pre-trained baselines, with Llama-3.2-1B-Instruct achieving the highest scores. Both BTGenBot and gpt-4o perform competitively, with gpt-4o achieving a slight overall advantage with respect to BTGenBot.
+                </p>
+              </tr>
+              <tr>
+                <td width="50%">
+                  <p>
+                    Evaluation on the test set using the Zhang-Shasha algorithm. Llama-3.2-1B-Instruct FT and Phi-3.5-mini-instruct FT performs on par, while gpt-4o and BTGenBot fall behind.
+                  </p>
+                </td>
+                <td width="50%">
+                  <img src="static/images/zhang-shasha.png" />
+                </td>
+              </tr>
+            </table>
+          
+<!--           <img src="static/images/rouge_bleu.png" />
           <p>
             Evaluation on a test set of 250 BTs from the custom instruction-following dataset demonstrates that fine-tuning substantially improves performance compared to the pre-trained baselines, with Llama-3.2-1B-Instruct achieving the highest scores. Both BTGenBot and gpt-4o perform competitively, with gpt-4o achieving a slight overall advantage with respect to BTGenBot.
           </p>
@@ -203,7 +222,7 @@
           <p>
             Evaluation ...
           </p>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
