@@ -142,12 +142,14 @@
     <div class="hero-body">
       <img src="static/images/front_page_corl.png"/>
       <h2 class="subtitle has-text-centered">
-        We present BTGenBot-2, a 1B-parameter open-source small language model (SLM), trained on 5k natural language instructions and behavior tree pairs from a synthetic instruction-following dataset. BTGenBot-2 achieves state-of-the-art performances in generating directly executable behavior trees. We publicly release model weights and our synthetic dataset on HuggingFace, also our code is fully open-source.
+        We present <strong>BTGenBot-2</strong>, a 1B-parameter open-source small language model (SLM), trained on 5k natural language instructions and behavior tree pairs from a synthetic instruction-following dataset. BTGenBot-2 achieves state-of-the-art performances in generating directly executable behavior trees. We publicly release model weights and our synthetic dataset on HuggingFace, also our code is fully open-source.
       </h2>
     </div>
   </div>
 </section>
 
+
+  
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
@@ -163,6 +165,51 @@
     </div>
   </div>
 </section>
+
+
+  
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Dataset</h2>
+        <div class="content has-text-justified has-text-centered">
+          <img src="static/images/dataset_generation.png" />
+          <p>
+        Starting with the TSE dataset, a new instruction-following dataset is created through four key steps: (1) cleanse the raw data using a Python XML parser, (2) for each original BT, use gpt‑4o‑mini to generate three variants, (3) repeat step 2 with the newly obtained dataset, (4) merge all resulting datasets while producing a natural-language description for each BT.  </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Experiments</h2>
+        <h3 class="title is-4">Preliminary Evaluation</h3>
+        <div class="content has-text-justified has-text-centered">
+          <img src="static/images/rouge_bleu.png" />
+          <p>
+            Evaluation on a test set of 250 BTs from the custom instruction-following dataset demonstrates that fine-tuning substantially improves performance compared to the pre-trained baselines, with Llama-3.2-1B-Instruct achieving the highest scores. Both BTGenBot and gpt-4o perform competitively, with gpt-4o achieving a slight overall advantage with respect to BTGenBot.
+          </p>
+        </div>
+        <h3 class="title is-4">Validation</h3>
+        <div class="content has-text-justified has-text-centered">
+          <img src="static/images/zhang-shasha.png" />
+          <p>
+            Evaluation ...
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
   
 <!-- End main image -->
 
@@ -220,7 +267,7 @@
   </div>
 </div>
 </div>
-</section> --> -->
+</section> --> 
 <!-- End image carousel -->
 
 
@@ -243,12 +290,12 @@
       </div>
     </div>
   </div>
-</section> --> -->
+</section> --> 
 <!-- End youtube video -->
 
 
 <!-- Video carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Another Carousel</h2>
@@ -256,28 +303,28 @@
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
             <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
+<!--             <source src="static/videos/carousel1.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
             <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
+<!--             <source src="static/videos/carousel2.mp4"
             type="video/mp4">
           </video>
-        </div>
-        <div class="item item-video3">
+        </div> --> 
+<!--         <div class="item item-video3">
           <video poster="" id="video3" autoplay controls muted loop height="100%">\
             <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
+<!--             <source src="static/videos/carousel3.mp4"
             type="video/mp4">
           </video>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End video carousel -->
 
 
@@ -286,7 +333,7 @@
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -296,7 +343,7 @@
         
       </div>
     </div>
-  </section>
+  </section> -->
 <!--End paper poster -->
 
 
